@@ -137,4 +137,4 @@ SELECT m.name, COUNT(t.transactions_id)AS borrowed_count
 FROM Members m
 JOIN Transactions t ON m.member_id= t.member_id
 GROUP BY m.member_id,m.name
-HAVING COUNT(t.transaction_id)>2; -- Error
+HAVING COUNT(t.transaction_id)>2;
